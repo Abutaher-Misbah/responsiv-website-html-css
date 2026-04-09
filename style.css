@@ -16,7 +16,7 @@ nav {
     align-items: center;
     padding: 0 50px 0 80px;
     height: 70px;
-    background-color: #1c2833;
+    background-color: #01284b;
     color: white;
 
 }
@@ -26,6 +26,16 @@ nav div {
     font-weight: bold;
     color: greenyellow;
 }
+/* 
+#click{
+    display: none;
+}
+
+.menu-bar{
+    display: none;
+    font-size: 22px;
+    cursor: pointer;
+} */
 
 nav ul {
     display: flex;
@@ -43,10 +53,100 @@ nav>ul>li>a {
     border-radius: 5px;
     padding: 5px 10px;
     transition: 0.5s;
+   
 }
 
 nav>ul>li>a:hover,
 nav>ul>li>a.activ {
     background-color: #566573;
     
+}
+
+/* Responsiv desine code here */
+/* 
+@media only screen and (max-width:940px) {
+   nav>ul{
+    position: fixed;
+    top: 70px;
+    background-color: #17202A;
+    height: 100vh;
+    width: 100%;
+    left: -100%;
+    padding-top:20px ;
+    flex-direction: column;
+    text-align: center;
+    transition: all 0.5s ease;
+    
+   }
+
+   nav ul li{
+    margin: 50px 0;
+   }
+
+   nav ul li a{
+    font-size: 22px;
+   }
+
+   nav ul li a:hover, nav ul li a.activ{
+   background:none;
+    color: red;
+   }
+   .menu-bar{
+    display: block;
+   }
+   #click:checked ~ ul{
+    left: 0%;
+   }
+   #click:checked ~ .menu-bar i::before{
+    content: "\2b";
+   }
+
+
+} */
+
+#click{
+    display: none;
+}
+.menu-bar{
+    display: none;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width:940px) {
+    nav ul{
+        position: fixed;
+        flex-direction: column;
+        top: 70px;
+        background-color: #17202A;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        text-align: center;
+        transition: all 0.5s ease;
+    }
+
+    nav ul li{
+        margin: 50px 0;
+    }
+
+    nav ul li a{
+        font-size: 22px;
+    }
+
+    nav ul li a:hover, nav ul li a.activ{
+        background: none;
+        color: red;
+    }
+    #click:checked ~ ul{
+        left: 0%;
+    }
+    .menu-bar{
+        display: block;
+    }
+
+    #click:checked ~ .menu-bar i::before{
+        content: "\2b";
+    }
+
 }
