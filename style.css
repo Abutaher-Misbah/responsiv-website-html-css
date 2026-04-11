@@ -26,6 +26,7 @@ nav div {
     font-weight: bold;
     color: greenyellow;
 }
+
 /* 
 #click{
     display: none;
@@ -43,7 +44,7 @@ nav ul {
 
 nav>ul>li {
     list-style-type: none;
-    margin:0 5px;
+    margin: 0 5px;
 }
 
 nav>ul>li>a {
@@ -53,13 +54,13 @@ nav>ul>li>a {
     border-radius: 5px;
     padding: 5px 10px;
     transition: 0.5s;
-   
+
 }
 
 nav>ul>li>a:hover,
 nav>ul>li>a.activ {
     background-color: #566573;
-    
+
 }
 
 /* Responsiv desine code here */
@@ -104,17 +105,18 @@ nav>ul>li>a.activ {
 
 } */
 
-#click{
+#click {
     display: none;
 }
-.menu-bar{
+
+.menu-bar {
     display: none;
     font-size: 22px;
     cursor: pointer;
 }
 
 @media only screen and (max-width:940px) {
-    nav ul{
+    nav ul {
         position: fixed;
         flex-direction: column;
         top: 70px;
@@ -126,26 +128,29 @@ nav>ul>li>a.activ {
         transition: all 0.5s ease;
     }
 
-    nav ul li{
+    nav ul li {
         margin: 50px 0;
     }
 
-    nav ul li a{
+    nav ul li a {
         font-size: 22px;
     }
 
-    nav ul li a:hover, nav ul li a.activ{
+    nav ul li a:hover,
+    nav ul li a.activ {
         background: none;
         color: red;
     }
-    #click:checked ~ ul{
+
+    #click:checked~ul {
         left: 0%;
     }
-    .menu-bar{
+
+    .menu-bar {
         display: block;
     }
 
-    #click:checked ~ .menu-bar i::before{
+    #click:checked~.menu-bar i::before {
         content: "\f00d";
         color: red;
     }
@@ -154,8 +159,8 @@ nav>ul>li>a.activ {
 
 /* herder part css code here */
 
-header{
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.671), rgba(0, 0, 0, 0)), url("media/benar.jpg");
+header {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.288), rgba(0, 0, 0, 0)), url("media/benar.jpg");
     height: 95vh;
     width: 100%;
     background-size: cover;
@@ -164,68 +169,74 @@ header{
 }
 
 
-.hero-content{
+.hero-content {
     width: 90%;
     margin: auto;
     padding: 40px 0;
 }
 
-.hero-content h1{
-      font-size:50px;
-      margin-bottom:10px;
-    }
+.hero-content h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
 
-    .hero-content h1 span{
-      color:#056d99;
-    }
+.hero-content h1 span {
+    color: #056d99;
+}
 
-    .hero-content h2{
-      font-weight:400;
-      margin-bottom:20px;
-      color:#cbd5f5;
-    }
+.hero-content h2 {
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: #cbd5f5;
+}
 
-    .hero-content p{
-      margin-bottom:30px;
-      color:#94a3b8;
-    }
+.hero-content p {
+    margin-bottom: 30px;
+    color: #363e49;
+}
 
-    .btn{
-      text-decoration:none;
-      padding:12px 25px;
-      background:#026088;
-      color:#000;
-      border-radius:25px;
-      margin:5px;
-      display:inline-block;
-      transition:0.3s;
-    }
+.btn {
+    text-decoration: none;
+    padding: 12px 25px;
+    background: #026088;
+    color: #000;
+    border-radius: 25px;
+    margin: 5px;
+    display: inline-block;
+    transition: 0.3s;
+}
 
-    .btn:hover{
-      background:#0ea5e9;
-      color:white;
-    }
+.btn:hover {
+    background: #0ea5e9;
+    color: white;
+}
 
-    .btn-outline{
-      background:transparent;
-      border:1px solid #38bdf8;
-      color:#38bdf8;
-    }
+.btn-outline {
+    background: transparent;
+    border: 1px solid #0c86bb;
+    color: #095658;
+}
 
-    .btn-outline:hover{
-      background:#38bdf8;
-      color:#000;
-    }
- 
+.btn-outline:hover {
+    background: #38bdf8;
+    color: #000;
+}
+
 
 
 /* main aria first sectoin css code here */
 
-.first-section{
+.first-section {
     background-color: #01284b;
 }
 
-.servic-aria-parent{
+.first-section>h2 {
+    text-align: center;
+    color: white;
+    padding-top: 40px;
+}
+
+.servic-aria-parent {
     width: 900px;
     margin: auto;
     display: grid;
@@ -234,42 +245,115 @@ header{
     padding: 30px 0;
 }
 
-.single-servic-card{
+.single-servic-card {
     background-color: white;
     text-align: center;
     padding: 20px 10px;
     border: 3px solid green;
     box-shadow: 5px 5px 10px gray;
-    
+
 
 
 }
 
-.single-servic-card i{
+.single-servic-card i {
     font-size: 40px;
 }
 
-.single-servic-card h2{
+.single-servic-card h2 {
     margin: 10px 0;
 }
 
+/* second section code here */
+
+.second-section {
+    background-color: #045b80;
+    padding: 50px 0 100px 0;
+}
+
+.second-section>h2 {
+    text-align: center;
+    color: yellow;
+    letter-spacing: 0.2em;
+}
+
+.smart-aria-parent {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 100px;
+    margin-left: 50px;
+    align-items: center;
+}
+
+.smart-image {
+    width: 300px;
+
+}
+
+.smart-image img {
+    width: 100%;
+}
+
+.smart-text {
+    width: 500px;
+    color: white;
+
+}
+
+.smart-text h2 {
+    margin: 20px 0;
+}
+
+.smart-text a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 22px;
+    background-color: bisque;
+    padding: 10px 30px;
+    border-radius: 5px;
+    margin-top: 40px;
+    color: red;
+
+}
+
+
 /* servic aria responsiv desine css code here */
 @media only screen and (max-width:688px) {
-    .servic-aria-parent{
+    .servic-aria-parent {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 10px;
         width: 100%;
     }
+
+    .smart-aria-parent {
+        display: block;
+        margin-right: 20px;
+        margin-left: 20px;
+        width: 100%;
+
+    }
+    .smart-image{
+        margin-bottom: 20px;
+
+    }
+
 }
 
 @media only screen and (min-width:689px) and (max-width:899px) {
-    .servic-aria-parent{
+    .servic-aria-parent {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 20px;
         width: 100%;
+
+    }
+
+     .smart-aria-parent {
+        display: block;
+        margin-right: 50px;
+        margin-left: 50px;
+        width: 100%;
+
     }
 }
-
-
