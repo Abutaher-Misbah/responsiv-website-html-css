@@ -146,7 +146,130 @@ nav>ul>li>a.activ {
     }
 
     #click:checked ~ .menu-bar i::before{
-        content: "\2b";
+        content: "\f00d";
+        color: red;
     }
 
 }
+
+/* herder part css code here */
+
+header{
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.671), rgba(0, 0, 0, 0)), url("media/benar.jpg");
+    height: 95vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.hero-content{
+    width: 90%;
+    margin: auto;
+    padding: 40px 0;
+}
+
+.hero-content h1{
+      font-size:50px;
+      margin-bottom:10px;
+    }
+
+    .hero-content h1 span{
+      color:#056d99;
+    }
+
+    .hero-content h2{
+      font-weight:400;
+      margin-bottom:20px;
+      color:#cbd5f5;
+    }
+
+    .hero-content p{
+      margin-bottom:30px;
+      color:#94a3b8;
+    }
+
+    .btn{
+      text-decoration:none;
+      padding:12px 25px;
+      background:#026088;
+      color:#000;
+      border-radius:25px;
+      margin:5px;
+      display:inline-block;
+      transition:0.3s;
+    }
+
+    .btn:hover{
+      background:#0ea5e9;
+      color:white;
+    }
+
+    .btn-outline{
+      background:transparent;
+      border:1px solid #38bdf8;
+      color:#38bdf8;
+    }
+
+    .btn-outline:hover{
+      background:#38bdf8;
+      color:#000;
+    }
+ 
+
+
+/* main aria first sectoin css code here */
+
+.first-section{
+    background-color: #01284b;
+}
+
+.servic-aria-parent{
+    width: 900px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 25px;
+    padding: 30px 0;
+}
+
+.single-servic-card{
+    background-color: white;
+    text-align: center;
+    padding: 20px 10px;
+    border: 3px solid green;
+    box-shadow: 5px 5px 10px gray;
+    
+
+
+}
+
+.single-servic-card i{
+    font-size: 40px;
+}
+
+.single-servic-card h2{
+    margin: 10px 0;
+}
+
+/* servic aria responsiv desine css code here */
+@media only screen and (max-width:688px) {
+    .servic-aria-parent{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 10px;
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width:689px) and (max-width:899px) {
+    .servic-aria-parent{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+        width: 100%;
+    }
+}
+
+
