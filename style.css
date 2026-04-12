@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 /* 
 *{
     outline: 1px solid red;
@@ -27,7 +28,7 @@ nav {
     background-color: #01284b;
     color: white;
     width: 100%;
-   
+
 
 }
 
@@ -85,6 +86,7 @@ header {
     background-repeat: no-repeat;
 }
 
+/* ai creativ now  */
 
 .hero-content {
     width: 95%;
@@ -130,8 +132,8 @@ header {
 
 .btn-outline {
     background: transparent;
-    border: 1px solid #0c86bb;
-    color: #095658;
+    border: 1px solid #0daef3;
+    color: #0e84f3;
 }
 
 .btn-outline:hover {
@@ -296,7 +298,8 @@ header {
     .smart-aria-parent {
         display: block;
         width: 100%;
-       
+        padding: 0 20px;
+
 
     }
 
@@ -304,8 +307,8 @@ header {
         margin-bottom: 20px;
 
     }
-    
-    .smart-text{
+
+    .smart-text {
         width: 100%;
     }
 }
@@ -324,9 +327,10 @@ header {
     .smart-aria-parent {
         display: block;
         width: 100%;
-
+        padding: 0 25px
     }
-    .smart-text{
+
+    .smart-text {
         width: 100%;
     }
 }
