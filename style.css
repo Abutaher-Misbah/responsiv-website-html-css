@@ -12,9 +12,8 @@ body {
 
 nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    padding: 0 50px 0 80px;
     height: 70px;
     background-color: #01284b;
     color: white;
@@ -27,16 +26,6 @@ nav div {
     color: greenyellow;
 }
 
-/* 
-#click{
-    display: none;
-}
-
-.menu-bar{
-    display: none;
-    font-size: 22px;
-    cursor: pointer;
-} */
 
 nav ul {
     display: flex;
@@ -44,7 +33,7 @@ nav ul {
 
 nav>ul>li {
     list-style-type: none;
-    margin: 0 5px;
+
 }
 
 nav>ul>li>a {
@@ -63,47 +52,6 @@ nav>ul>li>a.activ {
 
 }
 
-/* Responsiv desine code here */
-/* 
-@media only screen and (max-width:940px) {
-   nav>ul{
-    position: fixed;
-    top: 70px;
-    background-color: #17202A;
-    height: 100vh;
-    width: 100%;
-    left: -100%;
-    padding-top:20px ;
-    flex-direction: column;
-    text-align: center;
-    transition: all 0.5s ease;
-    
-   }
-
-   nav ul li{
-    margin: 50px 0;
-   }
-
-   nav ul li a{
-    font-size: 22px;
-   }
-
-   nav ul li a:hover, nav ul li a.activ{
-   background:none;
-    color: red;
-   }
-   .menu-bar{
-    display: block;
-   }
-   #click:checked ~ ul{
-    left: 0%;
-   }
-   #click:checked ~ .menu-bar i::before{
-    content: "\2b";
-   }
-
-
-} */
 
 #click {
     display: none;
@@ -113,48 +61,6 @@ nav>ul>li>a.activ {
     display: none;
     font-size: 22px;
     cursor: pointer;
-}
-
-@media only screen and (max-width:940px) {
-    nav ul {
-        position: fixed;
-        flex-direction: column;
-        top: 70px;
-        background-color: #17202A;
-        height: 100vh;
-        width: 100%;
-        left: -100%;
-        text-align: center;
-        transition: all 0.5s ease;
-    }
-
-    nav ul li {
-        margin: 50px 0;
-    }
-
-    nav ul li a {
-        font-size: 22px;
-    }
-
-    nav ul li a:hover,
-    nav ul li a.activ {
-        background: none;
-        color: red;
-    }
-
-    #click:checked~ul {
-        left: 0%;
-    }
-
-    .menu-bar {
-        display: block;
-    }
-
-    #click:checked~.menu-bar i::before {
-        content: "\f00d";
-        color: red;
-    }
-
 }
 
 /* herder part css code here */
@@ -237,7 +143,7 @@ header {
 }
 
 .servic-aria-parent {
-    width: 900px;
+    width: 90%;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -280,8 +186,8 @@ header {
 .smart-aria-parent {
     display: flex;
     justify-content: space-between;
-    margin-right: 100px;
-    margin-left: 50px;
+    width: 90%;
+    margin: auto;
     align-items: center;
 }
 
@@ -317,7 +223,55 @@ header {
 }
 
 
+/* nav bar responsiv desine code here */
+
+
+@media only screen and (max-width:688px) {
+    nav ul {
+        position: fixed;
+        flex-direction: column;
+        top: 70px;
+        background-color: #17202A;
+        height: 100vh;
+        width: 70%;
+        left: -100%;
+        text-align: center;
+        transition: all 0.5s ease;
+    }
+
+    nav ul li {
+        margin: 40px 0;
+    }
+
+    nav ul li a {
+        font-size: 22px;
+    }
+
+    nav ul li a:hover,
+    nav ul li a.activ {
+        background: none;
+        color: red;
+    }
+
+    #click:checked~ul {
+        left: 0%;
+    }
+
+    .menu-bar {
+        display: block;
+    }
+
+    #click:checked~.menu-bar i::before {
+        content: "\f00d";
+        color: red;
+    }
+
+}
+
+
+
 /* servic aria responsiv desine css code here */
+
 @media only screen and (max-width:688px) {
     .servic-aria-parent {
         display: grid;
@@ -328,19 +282,19 @@ header {
 
     .smart-aria-parent {
         display: block;
-        margin-right: 20px;
-        margin-left: 20px;
         width: 100%;
+       
 
     }
-    .smart-image{
+
+    .smart-image {
         margin-bottom: 20px;
 
     }
 
 }
 
-@media only screen and (min-width:689px) and (max-width:899px) {
+@media only screen and (min-width:689px) and (max-width:992px) {
     .servic-aria-parent {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -349,10 +303,8 @@ header {
 
     }
 
-     .smart-aria-parent {
+    .smart-aria-parent {
         display: block;
-        margin-right: 50px;
-        margin-left: 50px;
         width: 100%;
 
     }
