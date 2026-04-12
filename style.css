@@ -5,11 +5,15 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+/* 
+*{
+    outline: 1px solid red;
+} */
+/* 
 html, body{
     overflow-x: hidden;
     max-width: 100%;
-}
+} */
 
 body {
     font-family: "Montserrat", sans-serif;
@@ -22,6 +26,8 @@ nav {
     height: 70px;
     background-color: #01284b;
     color: white;
+    width: 100%;
+   
 
 }
 
@@ -81,7 +87,7 @@ header {
 
 
 .hero-content {
-    width: 90%;
+    width: 95%;
     margin: auto;
     padding: 40px 0;
 }
@@ -139,6 +145,7 @@ header {
 
 .first-section {
     background-color: #01284b;
+    width: 100%;
 }
 
 .first-section>h2 {
@@ -180,6 +187,7 @@ header {
 .second-section {
     background-color: #045b80;
     padding: 50px 0 100px 0;
+    width: 100%;
 }
 
 .second-section>h2 {
@@ -206,7 +214,7 @@ header {
 }
 
 .smart-text {
-    width: 500px;
+    width: 90%;
     color: white;
 
 }
@@ -296,8 +304,13 @@ header {
         margin-bottom: 20px;
 
     }
-
+    
+    .smart-text{
+        width: 100%;
+    }
 }
+
+
 
 @media only screen and (min-width:689px) and (max-width:992px) {
     .servic-aria-parent {
@@ -312,5 +325,8 @@ header {
         display: block;
         width: 100%;
 
+    }
+    .smart-text{
+        width: 100%;
     }
 }
