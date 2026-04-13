@@ -317,7 +317,7 @@ header {
 }
 
 .advise-image-div {
-    width: 300px;
+    width: 460px;
 
 }
 
@@ -545,6 +545,10 @@ letter-spacing: 0.1em;
         width: 100%;
 
     }
+    .advise-image-div{
+        width: 100%;
+    }
+
 
 /* contact section responsiv desine */
 
@@ -553,10 +557,11 @@ letter-spacing: 0.1em;
     background-color: #2e357a;
     border: 3px solid #4497d3;
     width: 100%;
+    padding:30px 20px ;
 }
 
 .contarct-section{
-    padding: 50px 20px;
+    padding: 50px 30px;
 }
 
 
@@ -620,10 +625,12 @@ letter-spacing: 0.1em;
     background-color: #2e357a;
     border: 3px solid #4497d3;
     width: 100%;
+    padding: 30px 20px;
 }
 
 .contarct-section{
-    padding: 80px 30px;
+    padding: 100px 100px;
+    margin: 0 auto;
 }
 
 
