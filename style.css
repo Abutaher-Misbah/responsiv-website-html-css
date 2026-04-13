@@ -78,7 +78,7 @@ nav>ul>li>a.activ {
 /* herder part css code here */
 
 header {
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.288), rgba(0, 0, 0, 0)), url("media/benar.jpg");
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.288), rgba(0, 0, 0, 0)), url("media/bener.jpg");
     height: 95vh;
     width: 100%;
     background-size: cover;
@@ -97,10 +97,11 @@ header {
 .hero-content h1 {
     font-size: 50px;
     margin-bottom: 10px;
+    color: rgb(184, 176, 176);
 }
 
 .hero-content h1 span {
-    color: #056d99;
+    color: #096d97;
 }
 
 .hero-content h2 {
@@ -111,7 +112,7 @@ header {
 
 .hero-content p {
     margin-bottom: 30px;
-    color: #363e49;
+    color: #7189ac;
 }
 
 .btn {
@@ -317,6 +318,7 @@ header {
 
 .advise-image-div {
     width: 300px;
+
 }
 
 .image-div img {
@@ -327,7 +329,7 @@ header {
     margin: 20px 0;
 }
 
-.advise-image-div>a{
+.advise-image-div>a {
     display: inline-block;
     background-color: white;
     padding: 5px 15px;
@@ -335,7 +337,7 @@ header {
     margin: 30px 5px;
     color: black;
     text-align: center;
-    
+
 
 }
 
@@ -344,15 +346,15 @@ header {
     width: 450px;
 }
 
-.advise-text-div>p{
+.advise-text-div>p {
     margin: 20px 0;
     border-top: 2px solid red;
-    padding-top:20px ;
+    padding-top: 20px;
     text-align: justify;
     line-height: 1.3;
 }
 
-.advise-text-div>a{
+.advise-text-div>a {
     display: inline-block;
     text-decoration: none;
     background-color: white;
@@ -360,6 +362,67 @@ header {
     border-radius: 25px;
     color: black;
     font-weight: bold;
+}
+
+
+/* contarct form css code here */
+
+.contarct-section {
+    background-image: url(media/form.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+
+.input-form {
+    background-color: #01284b;
+    color: white;
+    padding: 30px 60px;
+    border: 3px solid #0daef3;
+    border-radius: 5px;
+
+}
+
+.input-form h2 {
+    margin-bottom: 10px;
+}
+
+.input-form p {
+    margin: 20px 0;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.input-div input {
+    display: block;
+    margin: 10px auto;
+    width: 95%;
+    padding: 10px;
+    border: none;
+    background: none;
+    border-bottom: 2px solid #026088;
+    outline: none;
+    color: white;
+}
+
+.submit-btn input {
+    margin: 20px 0;
+    padding: 8px 50px;
+    background-color: #026088;
+    border: none;
+    border-radius: 10px;
+    transition: 0.5s;
+    color: white;
+
+}
+
+.submit-btn input:hover {
+    background-color: #033d70;
 }
 
 /* nav bar responsiv desine code here */
@@ -412,6 +475,15 @@ header {
 /* servic aria responsiv desine css code here */
 
 @media only screen and (max-width:688px) {
+
+
+    header {
+        height: 95vh;
+        width: 100%;
+        background-size: cover;
+
+    }
+
     .servic-aria-parent {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -453,17 +525,22 @@ header {
         margin-left: 0;
     }
 
+
+    .advise-section-parent {
+        display: block;
+        width: 100%;
+        padding: 20px 20px;
+    }
+
+    .advise-text-div {
+        width: 100%;
+
+    }
     
-.advise-section-parent {
-    display: block;
+.contarct-section {
     width: 100%;
-   padding: 20px 20px;
+    height: 50vh;
 }
-
-.advise-text-div {
-    width: 100%;
-}
-
 
 
 
@@ -498,13 +575,31 @@ header {
     }
 
 
+
     .abuot-box-item-parent {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        margin-left: 0;
+
     }
 
 
+    .advise-text-div {
+        width: 100%;
+        margin-left: 20px;
+
+    }
+
+
+    .advise-image-div {
+        width: 450px;
+
+    }
+
+      
+.contarct-section {
+    width: 100%;
+    
+}
 
 
 
