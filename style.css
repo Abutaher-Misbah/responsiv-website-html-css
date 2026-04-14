@@ -4,21 +4,27 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+
 }
 
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+
 /* 
-*{
+* {
     outline: 1px solid red;
 } */
+
+
 /* 
 html, body{
     overflow-x: hidden;
     max-width: 100%;
 } */
 
-body {
-    font-family: "Montserrat", sans-serif;
-}
 
 nav {
     display: flex;
@@ -310,7 +316,7 @@ header {
 .advise-section-parent {
     display: flex;
     justify-content: space-between;
-    width: 80%;
+    width: 90%;
     margin: auto;
     padding: 50px 0;
     color: white;
@@ -476,30 +482,40 @@ header {
 /* take care section css code here */
 
 
+
+.take-care-section {
+
+    padding: 80px 0;
+}
+
 .take-care-parent {
     display: flex;
     justify-content: space-between;
-    width: 80%;
-    margin: auto;
-    padding: 80px 20px;
+    width: 100%;
+    padding: 0 50px;
+    gap: 15px;
+    align-items: center;
+
 }
 
-.take-care-text-div {
-    width: 100%;
-    font-weight: bold;
-    font-size: 14px;
+
+.take-care-text-div h3 {
+    font-size: 30px;
 }
 
 .take-care-text-div>p {
-    margin: 20px 0;
+    margin: 15px 0;
 }
 
 .take-care-text-div ul li {
-    margin: 8px 0;
+    margin: 5px 0;
+    list-style-position: inside;
 }
 
 .take-care-image-div {
     width: 100%;
+
+
 }
 
 .take-care-image-div img {
@@ -683,19 +699,23 @@ header {
 
     /* take care section responsiv desine */
 
-
     .take-care-parent {
         display: block;
         width: 100%;
-        margin: auto;
-        padding: 80px 20px;
+        padding: 0 20px;
+
     }
 
+    .take-care-text-div {
+        margin-bottom: 30px;
+        width: 100%;
 
 
+
+    }
+
+    /* teb media query code start now */
 }
-
-/* teb media query code start now */
 
 @media only screen and (min-width:689px) and (max-width:992px) {
 
@@ -800,6 +820,23 @@ header {
 
     .match-section {
         padding: 40px;
+    }
+
+    /* take care section responsiv desine */
+
+    .take-care-parent {
+        display: block;
+        width: 100%;
+        padding: 0 20px;
+
+    }
+
+    .take-care-text-div {
+        margin-bottom: 30px;
+        width: 100%;
+
+
+
     }
 
 
