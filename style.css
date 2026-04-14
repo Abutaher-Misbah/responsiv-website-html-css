@@ -373,7 +373,7 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     padding: 100px 50px;
-   
+
 }
 
 .input-form {
@@ -383,16 +383,16 @@ header {
     border-radius: 10px;
     width: 50%;
     margin: 0 auto;
-  
+
 
 }
 
 .input-form h2 {
-text-align: center;
-font-size: 30px;
-color: white;
-letter-spacing: 0.1em;
-text-transform: uppercase;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
 }
 
 .input-form p {
@@ -415,8 +415,8 @@ text-transform: uppercase;
     color: white;
 }
 
-.input-div input::placeholder{
-    color: #4497D3; 
+.input-div input::placeholder {
+    color: #4497D3;
     font-size: 20px;
     font-weight: bold;
 }
@@ -427,7 +427,7 @@ text-transform: uppercase;
     margin: 0 auto;
     padding: 5px 40px;
     font-size: 20px;
-    background:none;
+    background: none;
     outline-style: ridge;
     transition: 0.5s;
     color: white;
@@ -437,8 +437,41 @@ text-transform: uppercase;
 
 .submit-btn input:hover {
     background-color: #16213e;
-   
+
 }
+
+
+/* match section css code here */
+.match-section {
+    background-color: #01284b;
+    padding: 50px;
+    color: white;
+}
+
+.match-item-parent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 25px;
+    margin-right: 50px;
+    margin-left: 50px;
+
+
+}
+
+.first-item-div {
+    padding: 15px;
+}
+
+.match-single-item {
+    border: 2px solid #0daef3;
+    padding: 15px;
+}
+
+.match-single-item i {
+    font-size: 30px;
+
+}
+
 /* nav bar responsiv desine code here */
 
 
@@ -491,30 +524,32 @@ text-transform: uppercase;
 @media only screen and (max-width:688px) {
 
 
-    
-header {
-   
-    height: 250px;
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
+
+    header {
+
+        height: 250px;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
 
 
-.hero-content {
-    width: 95%;
-    margin: auto;
-    padding: 10px 0;
-}
-.hero-content h1{
-    font-size: 40px;
-}
+    .hero-content {
+        width: 95%;
+        margin: auto;
+        padding: 10px 0;
+    }
 
-.hero-content h2{
-    font-size: 20px;
-}
+    .hero-content h1 {
+        font-size: 40px;
+    }
 
+    .hero-content h2 {
+        font-size: 20px;
+    }
+
+    /* servis aria responsiv desine */
 
     .servic-aria-parent {
         display: grid;
@@ -522,6 +557,8 @@ header {
         grid-gap: 10px;
         width: 100%;
     }
+
+    /* smart aria responsiv desine */
 
     .smart-aria-parent {
         display: block;
@@ -544,6 +581,8 @@ header {
         width: 100%;
     }
 
+    /* abuot aria responsiv desine */
+
     .abuot-section-parent {
         display: block;
         width: 100%;
@@ -557,6 +596,7 @@ header {
         margin-left: 0;
     }
 
+    /* advise aria responsiv desine  */
 
     .advise-section-parent {
         display: block;
@@ -568,55 +608,76 @@ header {
         width: 100%;
 
     }
-    .advise-image-div{
+
+    .advise-image-div {
         width: 100%;
     }
 
 
-/* contact section responsiv desine */
+    /* contact section responsiv desine */
 
 
-.input-form {
-    background-color: #2e357a;
-    border: 3px solid #4497d3;
-    width: 100%;
-    padding:30px 20px ;
+    .input-form {
+        background-color: #2e357a;
+        border: 3px solid #4497d3;
+        width: 100%;
+        padding: 30px 20px;
+    }
+
+    .contarct-section {
+        padding: 50px 30px;
+    }
+
+    /* match section responsiv desine */
+    .match-item-parent {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 10px;
+        margin-right: 10px;
+        margin-left: 10px;
+
+
+    }
+
+    .match-section {
+        padding: 10px;
+    }
+
+    .first-item-div {
+        text-align: center;
+    }
+
+
+
 }
 
-.contarct-section{
-    padding: 50px 30px;
-}
-
-
-
-}
-
-    /* teb media query code start now */
+/* teb media query code start now */
 
 @media only screen and (min-width:689px) and (max-width:992px) {
-    
-
-      
-header {
-   
-    height: 500px;
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
 
 
-.hero-content {
-    width: 95%;
-    margin: auto;
-    padding: 30px 0;
-}
 
-.hero-content h2{
-    font-size: 30px;
-    width: 100%;
-}
+    header {
+
+        height: 500px;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+
+    .hero-content {
+        width: 95%;
+        margin: auto;
+        padding: 30px 0;
+    }
+
+    .hero-content h2 {
+        font-size: 30px;
+        width: 100%;
+    }
+    /* servise aria responsiv desine */
 
     .servic-aria-parent {
         display: grid;
@@ -625,6 +686,8 @@ header {
         width: 100%;
 
     }
+
+    /* smart aria responsiv desine */
 
     .smart-aria-parent {
         display: block;
@@ -636,6 +699,7 @@ header {
         width: 100%;
     }
 
+    /* abuot section responsiv desine */
 
     .abuot-section-parent {
         display: block;
@@ -666,17 +730,32 @@ header {
 
     /* contact section responsiv desine  */
 
-.input-form {
-    background-color: #2e357a;
-    border: 3px solid #4497d3;
-    width: 100%;
-    padding: 30px 20px;
-}
+    .input-form {
+        background-color: #2e357a;
+        border: 3px solid #4497d3;
+        width: 100%;
+        padding: 30px 20px;
+    }
 
-.contarct-section{
-    padding: 100px 100px;
-    margin: 0 auto;
-}
+    .contarct-section {
+        padding: 100px 100px;
+        margin: 0 auto;
+    }
+
+    /* match section responsiv desine */
+    .match-item-parent {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 25px;
+        margin-right: 20px;
+        margin-left: 20px;
+
+
+    }
+
+    .match-section {
+        padding: 40px;
+    }
 
 
 
