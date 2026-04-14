@@ -522,6 +522,71 @@ header {
     width: 100%;
 }
 
+
+/* footer part css code here */
+footer{
+    background-color: #026088;
+    padding: 50px 0;
+   
+}
+.footer-div-parent{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    border-bottom: 3px solid #bcdcf8;
+    color: white;
+    padding: 0 80px;
+}
+.abuot-us{
+    width: 30%;
+}
+
+.abuot-us p{
+    margin: 10px 0;
+    line-height: 0.1 em;
+}
+
+.our-link{
+    text-align: center;
+}
+.our-link p{
+    margin: 20px 0;
+    
+}
+.our-link p a{
+    text-decoration: none;
+    color: rgb(194, 190, 190);
+   
+}
+
+.our-media>div{
+    display: block;
+    margin: 20px 0;
+
+}
+.our-media>div a{
+    text-decoration: none;
+    margin-right: 10px;
+    background-color: #01284b;
+    color: white;
+    padding: 5px 3px;
+}
+
+.our-media>h5{
+    margin-top: 100px;
+}
+
+.our-media>h5>span{
+    color: #08d0f3;
+}
+
+footer h5{
+    text-align: center;
+    color: white;
+    margin: 10px 0;
+}
+
+
 /* nav bar responsiv desine code here */
 
 
@@ -714,6 +779,30 @@ header {
 
     }
 
+/* footer section responsiv desine */
+
+.footer-div-parent{
+    display: block;
+    width: 100%;
+    padding: 0 30px;
+    text-align: center;
+}
+
+
+.abuot-us{
+    width: 100%;
+}
+
+.our-link{
+    margin: 30px 0;
+    text-align: center;
+}
+
+.our-media h5{
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
     /* teb media query code start now */
 }
 
@@ -838,6 +927,21 @@ header {
 
 
     }
+
+    /* footer section responsiv desine */
+
+    
+.footer-div-parent{
+    display: flex;
+    width: 100%;
+    padding: 0 40px;
+    
+}
+
+
+.abuot-us{
+    width: 30%;
+}
 
 
 
