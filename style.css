@@ -472,6 +472,40 @@ header {
 
 }
 
+
+/* take care section css code here */
+
+
+.take-care-parent {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    padding: 80px 20px;
+}
+
+.take-care-text-div {
+    width: 100%;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.take-care-text-div>p {
+    margin: 20px 0;
+}
+
+.take-care-text-div ul li {
+    margin: 8px 0;
+}
+
+.take-care-image-div {
+    width: 100%;
+}
+
+.take-care-image-div img {
+    width: 100%;
+}
+
 /* nav bar responsiv desine code here */
 
 
@@ -647,6 +681,16 @@ header {
         text-align: center;
     }
 
+    /* take care section responsiv desine */
+
+
+    .take-care-parent {
+        display: block;
+        width: 100%;
+        margin: auto;
+        padding: 80px 20px;
+    }
+
 
 
 }
@@ -677,6 +721,7 @@ header {
         font-size: 30px;
         width: 100%;
     }
+
     /* servise aria responsiv desine */
 
     .servic-aria-parent {
