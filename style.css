@@ -392,6 +392,7 @@ text-align: center;
 font-size: 30px;
 color: white;
 letter-spacing: 0.1em;
+text-transform: uppercase;
 }
 
 .input-form p {
@@ -490,7 +491,29 @@ letter-spacing: 0.1em;
 @media only screen and (max-width:688px) {
 
 
+    
+header {
+   
+    height: 310px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
+
+.hero-content {
+    width: 95%;
+    margin: auto;
+    padding: 10px 0;
+}
+.hero-content h1{
+    font-size: 40px;
+}
+
+.hero-content h2{
+    font-size: 20px;
+}
 
 
     .servic-aria-parent {
@@ -568,10 +591,32 @@ letter-spacing: 0.1em;
 
 }
 
-
+    /* teb media query code start now */
 
 @media only screen and (min-width:689px) and (max-width:992px) {
+    
 
+      
+header {
+   
+    height: 500px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.hero-content {
+    width: 95%;
+    margin: auto;
+    padding: 30px 0;
+}
+
+.hero-content h2{
+    font-size: 30px;
+    width: 100%;
+}
 
     .servic-aria-parent {
         display: grid;
